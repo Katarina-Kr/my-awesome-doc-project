@@ -42,3 +42,6 @@ nav: # Структура сайта
 - Инструкции: instruction\index.md
 - Инструкция 1: instruction\page1.md
 
+plugins:
+  - search
+  - glightbox
