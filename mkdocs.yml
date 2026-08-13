@@ -41,7 +41,10 @@ nav: # Структура сайта
 - Тестовая страница: page2.md
 - Инструкции: instruction\index.md
 - Инструкция 1: instruction\page1.md
+- Создание новой заметки: instruction\kkk.md
 
 plugins:
   - search
+  - - plantuml:
+      puml_url: https://www.plantuml.com/plantuml/
   - glightbox
