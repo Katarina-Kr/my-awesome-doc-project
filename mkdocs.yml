@@ -47,6 +47,6 @@ nav: # Структура сайта
 
 plugins:
   - search
-  - - plantuml:
+  - plantuml:
       puml_url: https://www.plantuml.com/plantuml/
   - glightbox
