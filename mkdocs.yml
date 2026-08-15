@@ -36,12 +36,14 @@ theme: # Тема сайта, информация о ее параметрах
     - search.highlight # Подсветка результатов поиска в тексте страницы
     - content.code.copy # Кнопка копирования в блоке кода
 
+
 nav: # Структура сайта
 - Главная страница: index.md
 - Тестовая страница: page2.md
-- Инструкции: instruction\index.md
-- Инструкция 1: instruction\page1.md
-- Создание новой заметки: instruction\kkk.md
+- Инструкции: 
+  - instruction\index.md
+  - Инструкция 1: instruction\page1.md
+  - Создание новой заметки: instruction\kkk.md
 
 plugins:
   - search
