@@ -81,9 +81,11 @@ end alt
 @enduml
 ```
 
-??? note "Закрытый спойлер"
+??? note "Код"
+
     ```
         @startuml
+        
         actor Пользователь
         participant Приложение
         participant Бэк
