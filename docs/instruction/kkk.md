@@ -81,6 +81,7 @@ end alt
 ```
 
 ??? note "Код"
+
     ```
     @startuml
 
