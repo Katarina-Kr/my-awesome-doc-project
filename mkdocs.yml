@@ -35,22 +35,6 @@ theme: # Тема сайта, информация о ее параметрах
     - search.suggest # Подсказки при вводе поискового запроса
     - search.highlight # Подсветка результатов поиска в тексте страницы
     - content.code.copy # Кнопка копирования в блоке кода
-  markdown_extensions: # Расширения markdown
-    - admonition # Поддержка информационных панелей (сообщений типа «Внимание», «Совет», «Примечание», etc.)
-    - footnotes # Поддержка встроенных сносок на страницах
-    - attr_list # Использование html-атрибутов и CSS в элементах markdown
-    - md_in_html # Поддержка markdown внутри html
-    - def_list # Поддержка списков определений
-    - pymdownx.tabbed: # Использование вкладок (табов)
-        alternate_style: true
-    - pymdownx.details # Использование спойлеров (катов)
-    - pymdownx.highlight: # Подсветка синтаксиса в блоках кода
-        anchor_linenums: true
-    - pymdownx.superfences # Поддержка вложенных блоков кода
-    - pymdownx.emoji: # Иконки и эмодзи
-        emoji_index: !!python/name:material.extensions.emoji.twemoji
-        emoji_generator: !!python/name:material.extensions.emoji.to_svg
-
 
 nav: # Структура сайта
   - Главная страница: index.md
@@ -60,8 +44,42 @@ nav: # Структура сайта
     - Инструкция 1: instruction/page1.md
     - Создание новой заметки: instruction/kkk.md
 
+markdown_extensions: # Расширения markdown
+  - md_in_html # Поддержка markdown внутри html
+  - admonition # Поддержка информационных панелей (сообщений типа «Внимание», «Совет», «Примечание», etc.)
+  - footnotes # Поддержка встроенных сносок на страницах
+  - attr_list # Использование html-атрибутов и CSS в элементах markdown
+  - def_list # Поддержка списков определений
+  - pymdownx.tabbed: # Использование вкладок (табов)
+      alternate_style: true
+  - pymdownx.details # Использование спойлеров (катов)
+  - pymdownx.highlight: # Подсветка синтаксиса в блоках кода
+      anchor_linenums: true
+  - pymdownx.superfences: # Поддержка вложенных блоков кода
+      custom_fences:
+        - name: raw
+          class: raw
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.snippets: # Использование заимствованного контента
+      #base_path:
+      #  - docs
+      #check_paths: false
+  - pymdownx.caret # Использование выделения, подчеркивания и зачеркивания
+
 plugins:
-  - search
+  - search # Плагин для подключения поиска на портале
+  - glightbox  
+  - tags:  # Плагин для подключения тегов
+      tags_allowed:
+      - portfolio
+      - manuals
+      - helps
+      - api
+  - swagger-ui-tag
+  - redoc-tag
   - plantuml:
       puml_url: https://www.plantuml.com/plantuml/
-  - glightbox
+      theme:
+       enabled: false
+
+
