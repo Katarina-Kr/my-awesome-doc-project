@@ -20,4 +20,6 @@ jobs:
       - run: pip install mkdocs-material
       - run: pip install mkdocs-glightbox # шаг для установки плагина mkdocs-glightbox
       - run: pip install mkdocs_puml # шаг для установки плагина plantuml
+      - run: pip install mkdocs-redoc-tag
+      - run: pip install mkdocs-swagger-ui-tag
       - run: mkdocs gh-deploy --force
