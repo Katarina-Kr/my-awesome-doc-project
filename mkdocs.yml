@@ -41,7 +41,7 @@ nav: # Структура сайта
   - Тестовая страница: page2.md
   - Инструкции: 
     - instruction/index.md
-    - Инструкция 1: instruction/page1.md
+    - Инструкция Создать группу в Telegram: instruction/page3.md
     - Создание новой заметки: instruction/kkk.md
 
 markdown_extensions: # Расширения markdown
