@@ -38,7 +38,6 @@ theme: # Тема сайта, информация о ее параметрах
 
 nav: # Структура сайта
   - Главная страница: index.md
-  - Тестовая страница: page2.md
   - Инструкции: 
     - instruction/index.md
     - Инструкция Создать группу в Telegram: instruction/page3.md
